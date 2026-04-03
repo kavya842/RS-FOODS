@@ -27,9 +27,13 @@ text
 RS-Foods/
 │
 ├── index.html          # Main landing page
+
 ├── style.css           # Styles & responsive design
+
 ├── script.js           # Core functionality & API integration
+
 ├── images/             # Food item images & assets
+
 └── README.md          # Project documentation
 
 Start exploring! 🍕
