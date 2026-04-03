@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Orders</title>
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="./order.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <h1>Your Orders</h1>
+
 <div id="orderContainer"></div>
 
-<script>
-let order = JSON.parse(localStorage.getItem("order")) || [];
-let container = document.getElementById("orderContainer");
+<div id="totalSection">
+   <h2>Total: <span id="totalPrice"></span></h2>
+</div>
 
-order.forEach(item => {
-    container.innerHTML += `
-        <div>
-            <img src="${item.image}" width="100">
-            <h3>${item.title}</h3>
-            <p>₹${item.price}</p>
-        </div>
-    `;
-});
-</script>
+<script src="./order.js"></script>
 
 </body>
 </html>

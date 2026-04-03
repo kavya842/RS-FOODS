@@ -27,23 +27,23 @@ fetch("https://dummyjson.com/recipes")
                 </div>
             `;
 
-            // 👉 CLICK ON CARD → DETAILS PAGE
+            // CLICK ON CARD → DETAILS PAGE
             card.addEventListener("click", () => {
                 localStorage.setItem("selectedRecipe", JSON.stringify(item));
                 window.location.href =  "../details/details.html";
             });
 
-            // 👉 BUTTONS separate ga handle cheyyali
+            // BUTTONS separate ga handle cheyyali
             let cartBtn = card.querySelector(".cartBtn");
             let orderBtn = card.querySelector(".orderBtn");
 
-            // 🛒 CART BUTTON
+            // CART BUTTON
             cartBtn.addEventListener("click", (e) => {
                 e.stopPropagation(); // ❗ important
                 addToCart(item.name, item.rating, item.image);
             });
 
-            // 🍽️ ORDER BUTTON
+            // ORDER BUTTON
             orderBtn.addEventListener("click", (e) => {
                 e.stopPropagation(); // ❗ important
                 addToOrder(item.name, item.rating, item.image);
@@ -54,7 +54,7 @@ fetch("https://dummyjson.com/recipes")
     });
 
 
-// 🛒 ADD TO CART
+//ADD TO CART
 function addToCart(name, price, image) {
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -78,7 +78,7 @@ function addToCart(name, price, image) {
 }
 
 
-// 🍽️ ADD TO ORDER
+//ADD TO ORDER
 function addToOrder(name, price, image) {
 
     let order = JSON.parse(localStorage.getItem("order")) || [];
