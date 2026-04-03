@@ -53,7 +53,7 @@ PWA Support - Installable web app experience
 
 ## Author
 Kavya Vankayalapati
-Final-year IT Student | 🌐 Full-Stack Web Developer
+Final-year IT Student |  Python Full-Stack Developer & Creating AI Automations
 Hyderabad, Telangana, India
 kavyavankayalapati9999@gmail.com
 
