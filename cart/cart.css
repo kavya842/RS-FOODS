@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+.cart-card {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.cart-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.qty {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.qty button {
+    padding: 5px 10px;
+    background: #ff5200;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+}

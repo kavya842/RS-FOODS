@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders</title>
+</head>
+<body>
+
+<h1>Your Orders</h1>
+<div id="orderContainer"></div>
+
+<script>
+let order = JSON.parse(localStorage.getItem("order")) || [];
+let container = document.getElementById("orderContainer");
+
+order.forEach(item => {
+    container.innerHTML += `
+        <div>
+            <img src="${item.image}" width="100">
+            <h3>${item.title}</h3>
+            <p>₹${item.price}</p>
+        </div>
+    `;
+});
+</script>
+
+</body>
+</html>
